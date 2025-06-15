@@ -187,7 +187,7 @@ export const uploadToS3 = async (filePath, Key) => {
       })
     )
 
-    return `${endpoint}${Key}`
+    return `${endpoint}/${bucket}${Key}`
 
     /* 
     // 方案2: 使用流处理
